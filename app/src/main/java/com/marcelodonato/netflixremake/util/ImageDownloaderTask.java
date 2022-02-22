@@ -2,6 +2,7 @@ package com.marcelodonato.netflixremake.util;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.os.AsyncTask;
 import android.widget.ImageView;
 
@@ -41,8 +42,8 @@ public class ImageDownloaderTask extends AsyncTask<String, Void, Bitmap> {
 
         } catch (Exception e) {
             e.printStackTrace();
-        }finally {
-            if(urlConnection != null)
+        } finally {
+            if (urlConnection != null)
                 urlConnection.disconnect();
         }
 
@@ -51,11 +52,20 @@ public class ImageDownloaderTask extends AsyncTask<String, Void, Bitmap> {
 
     @Override
     protected void onPostExecute(Bitmap bitmap) {
-        if(isCancelled())
+        if (isCancelled())
             bitmap = null;
 
         ImageView imageView = imageViewWeakReference.get();
-        if(imageView != null && bitmap != null){
+        if (imageView != null && bitmap != null) {
+
+            if (bitmap.getWidth() < imageView.getWidth() || bitmap.getHeight() < imageView.getHeight()) {
+                Matrix matrix = new Matrix();
+                matrix.postScale((float) imageView.getWidth() / (float) bitmap.getWidth(),
+                        (float) imageView.getHeight() / (float) bitmap.getHeight());
+
+                bitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, false);
+
+            }
             imageView.setImageBitmap(bitmap);
         }
 
