@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.31666666666666665" />
         <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/drawable/ic_baseline_play_circle_outline_24.xml" value="0.2916666666666667" />
         <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/drawable/placeholder_bg.xml" value="0.29444444444444445" />
         <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/drawable/play_button.xml" value="0.2916666666666667" />
         <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/drawable/shadows.xml" value="0.2916666666666667" />
         <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/layout/activity_movie.xml" value="0.33" />
+        <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/layout/activity_splash.xml" value="0.3453703703703704" />
         <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/layout/category_item.xml" value="0.3138888888888889" />
         <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/layout/movie_item.xml" value="0.3605128205128205" />
         <entry key="..\:/Users/Marcelo/AndroidStudioProjects/NetflixRemake/app/src/main/res/layout/movie_item_similar.xml" value="0.29074074074074074" />
